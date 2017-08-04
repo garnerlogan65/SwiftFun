@@ -31,18 +31,49 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlu-x0-TVr"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-9e-acE">
+                                <rect key="frame" x="157.66666666666669" y="291" width="100.00000000000006" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="78N-Ik-rIM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbI-8Q-tcd">
+                                <rect key="frame" x="157.66666666666669" y="223" width="100.00000000000006" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="erk-5Y-Rfm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aML-gH-tKZ">
+                                <rect key="frame" x="183" y="175" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="EDw-9e-acE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0G1-dJ-vKG"/>
+                            <constraint firstItem="aML-gH-tKZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Ao-wS-Nu0"/>
+                            <constraint firstItem="EDw-9e-acE" firstAttribute="top" secondItem="pbI-8Q-tcd" secondAttribute="bottom" constant="38" id="Oay-YT-XgG"/>
+                            <constraint firstItem="pbI-8Q-tcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wqj-Qb-B00"/>
                             <constraint firstItem="aJ2-tG-21q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fXE-aO-TFw"/>
                             <constraint firstItem="RF1-V5-F4G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ifF-be-2JC"/>
+                            <constraint firstItem="pbI-8Q-tcd" firstAttribute="top" secondItem="aML-gH-tKZ" secondAttribute="bottom" constant="17" id="igT-L8-gz6"/>
+                            <constraint firstItem="RF1-V5-F4G" firstAttribute="top" secondItem="EDw-9e-acE" secondAttribute="bottom" constant="37" id="jl0-nm-dUZ"/>
                             <constraint firstItem="aJ2-tG-21q" firstAttribute="top" secondItem="RF1-V5-F4G" secondAttribute="bottom" constant="10" id="lfo-9r-LyS"/>
+                            <constraint firstItem="EDw-9e-acE" firstAttribute="top" secondItem="pbI-8Q-tcd" secondAttribute="bottom" constant="38" id="ojT-kB-Gbs"/>
                             <constraint firstItem="RF1-V5-F4G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zkb-lJ-6Px"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="aML-gH-tKZ" id="mri-WE-FRn"/>
+                        <outlet property="bottomTextField" destination="EDw-9e-acE" id="Nna-0c-UcA"/>
                         <outlet property="myLabel" destination="RF1-V5-F4G" id="mQ4-ED-oBP"/>
+                        <outlet property="topTextField" destination="pbI-8Q-tcd" id="6U3-BZ-v6j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
